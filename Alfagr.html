@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة الفجر</title>
+
+    <link rel="stylesheet" href="Alfagr.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="#" method="post">
+            <div>
+                <label for="quantity">
+                    <i class="fa-solid fa-newspaper icon"></i>
+                    عدد الورق : 
+                </label>
+                <input class="quan" type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+        
+            <div>
+                <label for="color">
+                    <i class="fa-solid fa-palette icon"></i>
+                    اللون :
+                </label>
+                <select id="color" name="color" required>
+                    <option value="bw">أبيض و أسود</option>
+                    <option value="cmyk">ألوان</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="category">
+                    <i class="fa-regular fa-copy icon"></i>
+                    نوع الطباعة :
+                </label>
+                <select id="category" name="category" required>
+                    <option value="one">وجه واحد</option>
+                    <option value="both">وجهين</option>
+                </select>
+            </div>
+            <div class="btn-container">
+                <button class="btn" type="submit">إحسب السعر</button>
+            </div>
+            </form>
+
+            <div class="result">
+                <img src="img/palestine.png" alt="Free Palestine">
+                <h2 class="price">0</h2>
+            </div>
+    </div>
+    <footer class="footer">
+        <p>designed and developed by <a href="https://www.facebook.com/hamada.fathi.5055?locale=ar_AR" target="_blank"> Hamada Fathy</a></span> &copy; <span class="year"></span></p>
+       
+    </footer>
+
+
+    <script src="alfagr.js"></script>
+</body>
+
+</html>
